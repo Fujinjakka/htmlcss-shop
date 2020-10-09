@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  height: 450px;
+  width: 1000px;
+  background: lightgrey;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+.element {
+  height: 400px;
+  width: 300px;
+  background: lightgreen;
+  display: inline-block;
+  position: relative;
+}
+.discount {
+  background: green;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#lowdiscount {
+  background: red;
+}
+#photo1 {
+  background-image: url("../img/pd1.jpg");
+}
+#photo2 {
+  background-image: url("../img/pd2.jpg");
+}
+#photo3 {
+  background-image: url("../img/pd3.jpg");
+}
+
+.heart {
+  height: 20px;
+  width: 20px;
+  color: red;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  display: none;
+}
+.element:hover > .heart {
+  display: block;
+}
